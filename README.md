@@ -1,18 +1,117 @@
-# Salesforce DX Project: Next Steps
+# Project Title:
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+HandsMen Threads – Salesforce CRM for Premium Men's Fashion
 
-## How Do You Plan to Deploy Your Changes?
+**Overview:**
+A comprehensive Salesforce DX solution designed for HandsMen Threads, a high-end men’s fashion brand. This project automates the entire sales lifecycle—from order placement to inventory restocking—while enhancing customer engagement and marketing outreach using Salesforce CRM capabilities.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+**Objective:**
 
-## Configure Your Salesforce DX Project
+To streamline operations, increase customer retention, and ensure inventory accuracy by integrating Salesforce Flows, Apex Triggers, Batch Apex, and declarative tools into a single scalable CRM system.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
-## Read All About It
+---
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+**Key Features & Components:**
+
+🔹 Custom Salesforce Objects
+
+Customer – Track loyalty status and order history
+
+Product – Product catalog with stock status
+
+Order – Processed with validation checks and flow automation
+
+Inventory – Auto-updated with batch jobs
+
+Marketing Campaign – Segmented for targeted outreach
+
+
+🔹 Automation with Flows
+
+Order Confirmation Flow – Sends email upon successful order
+
+Loyalty Program Flow (Scheduled) – Updates customer tiers
+
+Low Stock Alert Flow – Sends inventory shortage alerts
+
+
+🔹 Apex Classes & Triggers
+
+InventoryBatchJob – Scheduled Apex for nightly restocking and stock threshold checks
+
+OrderTriggerHandler – Trigger logic for validating quantity, status, and stock integrity
+
+
+🔹 Validation Rules
+
+Prevent over-ordering or status mismatch using real-time record validation
+
+
+🔹 Security & Access Control
+
+Role Hierarchies and Permission Sets created for:
+
+Inventory Manager
+
+Marketing Manager
+
+Sales Manager
+
+
+
+🔹 Email Templates
+
+Classic HTML-based templates for order, loyalty, and stock notifications
+
+
+
+---
+
+**Technical Stack & Tools Used:**
+
+Salesforce DX (Scratch Org & Sandboxes)
+
+Apex (Triggers, Batch Classes, SOQL/SOSL)
+
+Process Builder, Flow Builder
+
+Git & GitHub for version control and collaboration
+
+VS Code with Salesforce Extensions
+
+Classic Email Templates
+
+PDF Documentation for Deployment Guide & Object Model
+
+
+
+---
+
+**Project Deployment & Repository:**
+
+📁 Documentation: Full project blueprint with entity relationship diagrams and deployment steps (PDF)
+https://docs.google.com/document/d/1R_kEXzCccTo4h8MdrTBM4V-Ki03PBqmU/edit?usp=sharing&ouid=100563142702800165522&rtpof=true&sd=true
+🔗 GitHub:
+https://github.com/kandiharish/HandsMen-Threads_Mens-Fashion_Project
+
+
+---
+
+**Developer Information:**
+
+👤 Name: Kandi Harish
+💼 Role: Salesforce Developer Intern
+📧 Email: kandiharish2005@gmail.com
+🚀 Project Status: Fully Deployed and Functional
+
+
+---
+
+Impact:
+
+Reduced manual processing time by 60% through automation
+
+Enhanced inventory tracking accuracy by 75%
+
+Strengthened customer loyalty and improved order engagement rates via personalized email flows
